@@ -1,0 +1,28 @@
+add = lambda x,y:x+y
+subtract = lambda x,y:x-y
+multiply = lambda x,y:x*y
+divide = lambda x,y:x/y
+
+while True:
+    print("Select operation.")
+    print("1 for Add")
+    print("2 for Subtract")
+    print("3 for Multiply")
+    print("4 for Divide")
+    user_choice = int(input('choose something 1/2/3/4 : '))
+    num1 = int(input('First number : '))
+    num2 = int(input('Second number : '))
+    if user_choice == 1:
+        print(f'num1 is {num1} \n num2 is {num2}. \n Add result is {add(num1,num2)}. ')
+    elif user_choice == 2:
+        print(f'num1 is {num1} \n num2 is {num2}. \n Subtract result is {subtract(num1,num2)}. ')
+    elif user_choice == 3:
+        print(f'num1 is {num1} \n num2 is {num2}. \n Multiply result is {multiply(num1,num2)}. ')
+    elif user_choice == 4:
+        print(f'num1 is {num1} \n num2 is {num2}. \n Divided result is {divided(num1,num2)}. ')
+    
+    again = input('do u wanna calculate again? (y/n) : ')
+    if again == "n" and 'N' and 'No' and 'NO':
+        break
+else:
+    print('invalid input')
